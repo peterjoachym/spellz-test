@@ -1,11 +1,25 @@
-import React from 'react'
+import React from "react";
 
-const Logo = () => {
+const Logo = ({ shrink, setShrink }) => {
+  
+  const handleShrink = () => {
+    setShrink(true);
+  };
+
   return (
-    <div className='logo__container'>
-        <img className='logo__content' src='/assets/logo_spellz_white.png' alt='logo__spellz' />
+    <div
+      className={shrink ? "logo__container__shrink" : "logo__container"}
+      role="button"
+      tabIndex={0}
+      onClick={handleShrink}
+    >
+      <img
+        className="logo__content"
+        src="/assets/logo_spellz_white.png"
+        alt="logo__spellz"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

@@ -15,3 +15,8 @@
 .logo__content{
     width: 100%;
 }
+
+.logo__container__shrink{
+    width: 22vw;
+    margin-top: 10vh;
+}
