@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./WelcomePage.css";
 import Logo from "../../components/Logo/Logo";
 import HelloText from "../../components/HelloText/HelloText";
@@ -7,12 +8,18 @@ import WelcomePageButtons from "../../components/WelcomePageButtons/WelcomePageB
 
 const WelcomePage = () => {
   const [shrink, setShrink] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    navigate("/dinner");
+  };
   return (
     <div className="welcome__page__container">
-      <Logo shrink={shrink} setShrink={setShrink}/>
-      <HelloText shrink={shrink}/>
-      <NameInput shrink={shrink}/>
-      <WelcomePageButtons shrink={shrink}/>
+      <Logo shrink={shrink} setShrink={setShrink} />
+      <HelloText shrink={shrink} />
+      <NameInput shrink={shrink} />
+      <WelcomePageButtons shrink={shrink} handleSubmit={handleSubmit} />
     </div>
   );
 };

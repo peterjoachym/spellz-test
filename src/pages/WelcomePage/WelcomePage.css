@@ -25,6 +25,7 @@
 .hello__text__container {
   width: 70vw;
   margin-top: 10vh;
+  text-align: center;
 }
 
 .hello__content {
@@ -33,19 +34,13 @@
   margin: 1vh;
 }
 .name__input__container {
-  width: 90vw;
+  width: 85vw;
   height: 7vh;
   margin-top: 5vh;
   display: flex;
   justify-content: center;
 }
 
-.name__input__form {
-  width: 90vw;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
 
 .name__input {
   width: 100%;
