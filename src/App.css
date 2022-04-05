@@ -2,7 +2,7 @@
 
 :root {
   --welcome-page-backgroung-color:linear-gradient(163.48deg, #6928B3 11.43%, #E8624D 120.77%);
-  --dinnerl-page-backbround-color: rgba(0, 0, 0, 0.3);
+  --dinner-page-backbround-color: rgba(0, 0, 0, 0.3);
   --pursue-action-button-background-color: #5928B3;
 
   font-family: 'Montserrat', sans-serif;
@@ -14,7 +14,6 @@
   height: 100vh;
   width: 100vw;
   text-align: center;
-  background: var(--welcome-page-backgroung-color)
 }
 
 
