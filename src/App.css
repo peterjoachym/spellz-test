@@ -8,18 +8,24 @@
   );
   --dinner-page-backbround-color: rgba(0, 0, 0, 0.3);
   --button-background-color: #5928b3;
+  --transparent-background: transparent;
 
   font-family: "Montserrat", sans-serif;
 }
 
 .button {
-  border: 1px solid var(--button-background-color);
+  border: 1px solid;
   box-sizing: border-box;
   border-radius: 60px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  height: 5vh;
 }
 
 .App {
   height: 100vh;
   width: 100vw;
-  text-align: center;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }

@@ -1,5 +1,97 @@
-.welcome__page__container{
-    height: 100vh;
-    width:100vw;
-    background: var(--welcome-page-backgroung-color);
+.welcome__page__container {
+  height: 100vh;
+  width: 100vw;
+  background: var(--welcome-page-backgroung-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.logo__container {
+  width: 35vw;
+  margin-top: 20vh;
+}
+
+.logo__content {
+  width: 100%;
+}
+
+.logo__container__shrink {
+  width: 22vw;
+  margin-top: 10vh;
+}
+
+.hello__text__container {
+  width: 70vw;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.hello__content {
+  font-weight: 700, bold;
+  font-size: 4vh;
+  margin: 1vh;
+}
+.name__input__container {
+  width: 85vw;
+  height: 7vh;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+.name__input {
+  width: 100%;
+  height: 5vh;
+  background-color: var(--transparent-background);
+  border: 1px solid;
+  border-color: white; 
+  border-radius: 60px;
+  box-shadow: none;
+  color: white;
+  font-family: Montserrat, sans serif;
+  font-style: italic;
+  font-size: 2.5vh;
+  padding-left: 4%;
+  
+}
+
+.name__input::placeholder {
+  font-family: Montserrat, sans serif;
+  font-style: italic;
+  font-weight: 300, Light;
+  color: white;
+  padding: 1vh;
+  font-size: 2.5vh;
+  opacity: 0.5;
+  background-color: var(--transparent-background);
+}
+
+.name__input:focus{  width: 100%;
+    outline: 1px solid white;
+}
+
+.welcome__page__buttons__container{
+    width: 80vw;
+    height: 5.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end ;
+    margin-top: 24vh;
+}
+
+.skip__button{
+    width:30vw;
+    background-color: var(--transparent-background);
+    border: 1px solid white;
+    color: White
+}
+.lets__start__button{
+    width: 35vw;
+    background-color:var(--button-background-color);
+    border: 1px solid var(--button-background-color);
+    color: white;
+    margin-left:10vw;
 }
