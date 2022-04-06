@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import userDinnerContext from "../../../context/userDinnerContext";
 
 const HintModal = (props) => {
+  const{handleOpenHintModal, handleAddItem, handleHintStage,nextHintStage}=useContext(userDinnerContext)
+
   const communityShareMessage =
     "You can add any item you deem important to share your recipe with your community";
   const protectedFieldsMessage =
     "Any good recipe starts with good ingredients. Preparation time is of the utmost importance";
   const addItemMessage = "Can’t think of anything? How about “cooking time”?";
 
-  const {handleOpenHintModal, handleAddItem, handleHintStage, nextHintStage}= props
+
 
   return (
     <div className="hint__modal__container ">

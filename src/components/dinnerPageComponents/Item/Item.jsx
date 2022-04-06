@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import userDinnerContext from "../../../context/userDinnerContext";
 
 const Item = (props) => {
-  const { index, nextHintStage } = props;
+  const { nextHintStage } = useContext(userDinnerContext);
+  const { index } = props;
 
   return (
     <div

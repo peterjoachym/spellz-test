@@ -1,7 +1,9 @@
-import React from "react";
+import React,{useContext} from "react";
+import userDinnerContext from "../../../context/userDinnerContext";
 
-const Logo = ({ shrink, setShrink }) => {
-  
+const Logo = () => {
+  const {shrink, setShrink}=useContext(userDinnerContext)
+
   const handleShrink = () => {
     setShrink(true);
   };

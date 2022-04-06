@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import userDinnerContext from "../../../context/userDinnerContext";
 import { useNavigate } from "react-router-dom";
 
-const NameInput = ({ shrink }) => {
-  const { setUser, user } = useContext(userDinnerContext);
+const NameInput = () => {
+  const { setUser, user, shrink } = useContext(userDinnerContext);
   const navigate = useNavigate();
 
   const handleClick = () => {
