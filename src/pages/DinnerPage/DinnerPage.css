@@ -1,5 +1,91 @@
-.dinner__page__container{
-    height: 100vh;
-    width: 100vw;
-    background:var(--dinner-page-backbround-color);
+.dinner__page__container {
+  height: 100vh;
+  width: 100vw;
+  background: var(--dinner-page-backbround-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dinner__header__container {
+  height: 10vh;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.dinner__title__container {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title__text__container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.title__text__content {
+  font-size: 3.5vh;
+}
+
+.info__button {
+  height: 4vh !important;
+  width: 9vw;
+  background-color: var(--transparent-background);
+  border: 1px solid #888888;
+}
+
+.dinner__subtitle {
+  color: #888888;
+  margin-top: 1vh;
+  font-size: 1.7vh;
+}
+
+.component__input__container {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+}
+
+.ingredient__input__label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.dinner__input {
+  width:100%;
+  border-radius: 7px;
+  height: 4vh;
+  border: none;
+  position: relative;
+  z-index: 0;
+  padding-left: 8vw;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+}
+
+.dinner__input::placeholder{
+  color: black;
+}
+
+.dinner__input:focus{
+  outline: none;
+}
+
+.lock__icon {
+  height: 2vh;
+  width: 4vw;
+  position: absolute;
+  background-color: var(--transparent-background);
+  z-index: 1;
+  margin-left: 3vw;
 }
