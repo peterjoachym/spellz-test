@@ -6,7 +6,7 @@ import AddItemButton from "../../components/dinnerPageComponents/AddItemButton/A
 import HintModal from "../../components/dinnerPageComponents/HintModal/HintModal";
 
 const DinnerPage = () => {
-  const itemsToMap =[{icon:"./assets/lock.png", name:"Ingredient"},{icon:"./assets/lock.png", name:"Ingredient"}]
+  const itemsToMap =[{icon:"./assets/lock.png", itemName:"Ingredient"},{icon:"./assets/lock.png", itemName:"Ingredient"},{icon:"./assets/lock.png", itemName:"Ingredient"}]
   const [openHintModal, setOpenHintModal] = useState(false);
   const [nextHintStage, setNextHintStage] = useState(false);
 
@@ -19,13 +19,13 @@ const DinnerPage = () => {
   };
 
   const handleAddItem = () => {
-    console.log("addItem");
+    itemsToMap.append({icon:"./assets/tick.png", itemName:"" })
   };
 
   return (
     <div className="dinner__page__container">
       <DinnerHeader handleOpenHintModal={handleOpenHintModal} />
-      <Items nextHintStage={nextHintStage}/>
+      <Items nextHintStage={nextHintStage} itemsToMap={itemsToMap}/>
       <AddItemButton nextHintStage={nextHintStage} handleAddItem={handleAddItem}/>
       {openHintModal && (
         <HintModal
