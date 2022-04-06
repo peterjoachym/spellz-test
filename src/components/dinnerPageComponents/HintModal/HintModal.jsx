@@ -53,6 +53,7 @@ const HintModal = (props) => {
             onClick={() => {
               handleAddItem();
               handleOpenHintModal();
+              handleHintStage();
             }}
           >
             Try it Now !
