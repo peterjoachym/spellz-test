@@ -2,7 +2,7 @@ import React from "react";
 
 const NameInput = ({ shrink, firstName }) => {
   return (
-    <div className="name__input__container">
+    <form className="name__input__container">
       {shrink && (
         <input
           className="name__input"
@@ -12,7 +12,7 @@ const NameInput = ({ shrink, firstName }) => {
           value={firstName}
         ></input>
       )}
-    </div>
+    </form>
   );
 };
 
