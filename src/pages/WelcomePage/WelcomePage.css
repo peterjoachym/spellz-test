@@ -38,7 +38,8 @@
   height: 7vh;
   margin-top: 5vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  flex-direction: column;
 }
 
 
