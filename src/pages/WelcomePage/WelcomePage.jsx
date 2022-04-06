@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./WelcomePage.css";
-import Logo from "../../components/Logo/Logo";
-import HelloText from "../../components/HelloText/HelloText";
-import NameInput from "../../components/NameInput/NameInput";
-import WelcomePageButtons from "../../components/WelcomePageButtons/WelcomePageButtons";
+import Logo from "../../components/welcomePageComponents/Logo/Logo";
+import HelloText from "../../components/welcomePageComponents/HelloText/HelloText";
+import NameInput from "../../components/welcomePageComponents/NameInput/NameInput";
+import WelcomePageButtons from "../../components/welcomePageComponents/WelcomePageButtons/WelcomePageButtons";
 
 const WelcomePage = () => {
   const [shrink, setShrink] = useState(false);

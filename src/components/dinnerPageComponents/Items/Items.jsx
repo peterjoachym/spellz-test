@@ -1,7 +1,7 @@
 import React from "react";
 
-const Items = () => {
-  //   const [disabled, setDisabled] = useState();
+const Items = (props) => {
+ 
 
   return (
     <div className="items__container">

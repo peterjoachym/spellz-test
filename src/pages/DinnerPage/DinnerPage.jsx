@@ -1,9 +1,9 @@
 import React,{useState} from "react";
-import DinnerHeader from "../../components/DinnerHeader/DinnerHeader";
 import "./DinnerPage.css";
-import Items from "../../components/Items/Items";
-import AddItemButton from "../../components/AddItemButton/AddItemButton";
-import HintModal from "../../components/HintModal/HintModal";
+import DinnerHeader from "../../components/dinnerPageComponents/DinnerHeader/DinnerHeader";
+import Items from "../../components/dinnerPageComponents/Items/Items";
+import AddItemButton from "../../components/dinnerPageComponents/AddItemButton/AddItemButton";
+import HintModal from "../../components/dinnerPageComponents/HintModal/HintModal";
 
 const DinnerPage = () => {
 
