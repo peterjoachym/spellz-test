@@ -6,6 +6,7 @@ import AddItemButton from "../../components/dinnerPageComponents/AddItemButton/A
 import HintModal from "../../components/dinnerPageComponents/HintModal/HintModal";
 
 const DinnerPage = () => {
+  const itemsToMap =[{icon:"./assets/lock.png", name:"Ingredient"},{icon:"./assets/lock.png", name:"Ingredient"}]
   const [openHintModal, setOpenHintModal] = useState(false);
   const [nextHintStage, setNextHintStage] = useState(false);
 
