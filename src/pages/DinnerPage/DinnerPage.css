@@ -4,6 +4,7 @@
   background: var(--dinner-page-backbround-color);
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -63,6 +64,10 @@
   border-radius: 7px;
 }
 
+.transparent__background{
+  background-color: var(--transparent-background);
+  border:1px solid #888888;
+}
 .dinner__item__text__container {
   width: 100%;
   height: 5vh;
@@ -89,20 +94,112 @@
   margin-left: 3vw;
 }
 
-.add__item__button__container{
-  width:85vw;
-  height:5vh;
+.add__item__button__container {
+  width: 85vw;
+  height: 5vh;
   margin-top: 5vh;
 }
 
-.add__item__button{
+.add__item__button {
   width: 100%;
   height: 100%;
-  border:1px solid var(--button-background-color);
+  border: 1px solid var(--button-background-color);
   border-radius: 7px;
   background-color: var(--transparent-background);
   color: var(--button-background-color);
   font-weight: 700;
   font-family: Montserrat, sans-serif;
   text-align: left;
+}
+
+.white__background{
+  background-color: white;
+}
+
+.hint__modal__container {
+  width: 80vw;
+  height: fit-content;
+  min-height: 30vh;
+  background-color: white;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10vh;
+}
+
+.hint__message__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.protected__fields__message {
+  font-weight: 500;
+  font-size: 2.4vh;
+  line-height: 126.16%;
+  margin: 3vh;
+}
+
+.icon__text__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon {
+  margin-top: 5vh;
+  font-size: 2.5vh;
+  margin-left: 2.5vh;
+}
+
+.community__message, .add__item__message {
+  font-weight: 500;
+  line-height: 126.16%;
+  margin: 5vh;
+  margin-left: 0;
+}
+
+.community__message{
+  font-size:2vh;
+}
+
+.add__item__message{
+  font-size: 2.4vh;
+  width: 42vw;
+}
+
+.hint__buttons__container {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-self: end;
+}
+
+.hint__done__button {
+  background-color: var(--transparent-background);
+  border-color: var(--button-background-color);
+  color: var(--button-background-color);
+  font-weight: 600;
+  width: 20vw;
+}
+
+.hint__add__item__button,
+.hint__try__it__button {
+  background-color: var(--button-background-color);
+  border-color: var(--button-background-color);
+  color: white;
+  font-weight: 600;
+}
+
+.hint__add__item__button {
+  width: 40vw;
+}
+
+.hint__try__it__button {
+  width: 45vw;
 }
