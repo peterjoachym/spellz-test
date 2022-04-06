@@ -47,38 +47,37 @@
   font-size: 1.7vh;
 }
 
-.component__input__container {
+.items__container {
   display: flex;
   flex-direction: column;
   width: 85vw;
 }
 
-.ingredient__input__label {
+.item__lock__container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2vh;
+  margin-top: 2.5vh;
+  background-color: white;
+  border-radius: 7px;
 }
 
-.dinner__input {
-  width:100%;
-  border-radius: 7px;
-  height: 4vh;
-  border: none;
+.dinner__item__text__container {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
   position: relative;
+}
+
+.dinner__item__text {
   z-index: 0;
   padding-left: 8vw;
   font-weight: 700;
   font-family: Montserrat, sans-serif;
-}
-
-.dinner__input::placeholder{
   color: black;
-}
-
-.dinner__input:focus{
-  outline: none;
+  font-size: 1.6vh;
 }
 
 .lock__icon {
