@@ -13,6 +13,17 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body{
+  height: 100vh;
+  width: 100vw;
+}
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  }
+
 .button {
   border: 1px solid;
   box-sizing: border-box;
@@ -22,9 +33,3 @@
   height: 5vh;
 }
 
-.App {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  }
