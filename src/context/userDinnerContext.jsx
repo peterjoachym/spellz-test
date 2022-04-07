@@ -21,6 +21,7 @@ export const UserDinnerContextProvider = ({ children }) => {
   const handleHintStage = () => {
     setNextHintStage(!nextHintStage);
   };
+  
   const handleAddItem = () => {
     itemsToMap.push({ icon: "./assets/tick.png", itemName: "" });
     console.log("open add item modal")
