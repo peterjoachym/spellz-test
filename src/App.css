@@ -1,20 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,300&display=swap");
 
 :root {
-  --welcome-page-backgroung-color:linear-gradient(163.48deg, #6928B3 11.43%, #E8624D 120.77%);
-  --dinnerl-page-backbround-color: rgba(0, 0, 0, 0.3);
-  --pursue-action-button-background-color: #5928B3;
+  --welcome-page-backgroung-color: linear-gradient(
+    163.48deg,
+    #6928b3 11.43%,
+    #e8624d 120.77%
+  );
+  --dinner-page-backbround-color: rgba(0, 0, 0, 0.3);
+  --button-background-color: #5928b3;
+  --transparent-background: transparent;
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-
+.button {
+  border: 1px solid;
+  box-sizing: border-box;
+  border-radius: 60px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  height: 5vh;
+}
 
 .App {
   height: 100vh;
   width: 100vw;
-  text-align: center;
-  background: var(--welcome-page-backgroung-color)
-}
-
-
+  display: flex;
+  flex-direction: column;
+  }
