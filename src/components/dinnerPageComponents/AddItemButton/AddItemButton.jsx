@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import userDinnerContext from "../../../context/userDinnerContext";
 
-const AddItemButton = (props) => {
-  const { handleAddItem, nextHintStage } = props;
+const AddItemButton = () => {
+  const { handleAddItem, nextHintStage } = useContext(userDinnerContext);
 
   return (
     <div className="add__item__button__container">
       <button
-        className={nextHintStage?"add__item__button white__background" :"add__item__button"}
+        className={
+          nextHintStage
+            ? "add__item__button white__background"
+            : "add__item__button"
+        }
         type="button"
         onClick={handleAddItem}
       >

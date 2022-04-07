@@ -1,34 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import userDinnerContext from "../../../context/userDinnerContext";
+import Item from "../Item/Item";
 
-const Items = (props) => {
-  const { nextHintStage } = props;
+const Items = () => {
+  const { itemsToMap } = useContext(userDinnerContext);
 
   return (
     <div className="items__container">
-      <div
-        className={
-          nextHintStage
-            ? "item__lock__container transparent__background"
-            : "item__lock__container"
-        }
-      >
-        <img className="lock__icon" src="./assets/lock.png" alt="lock" />
-        <div className="dinner__item__text__container">
-          <p className=" dinner__item__text">Ingredient</p>
-        </div>
-      </div>
-      <div
-        className={
-          nextHintStage
-            ? "item__lock__container transparent__background"
-            : "item__lock__container"
-        }
-      >
-        <img className="lock__icon" src="./assets/lock.png" alt="lock" />
-        <div className="dinner__item__text__container">
-          <p className="dinner__item__text">Preparation time</p>
-        </div>
-      </div>
+      {itemsToMap.map((item, index) => (
+        <Item key={index} index={index} {...itemsToMap} />
+      ))}
     </div>
   );
 };

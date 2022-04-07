@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useContext} from "react";
+import userDinnerContext from "../../../context/userDinnerContext";
 
-const DinnerHeader = ({handleOpenHintModal}) => {
+const DinnerHeader = () => {
+  const { handleOpenHintModal } = useContext(userDinnerContext);
 
   return (
     <div className="dinner__header__container">
@@ -8,7 +10,11 @@ const DinnerHeader = ({handleOpenHintModal}) => {
         <div className="title__text__container">
           <h1 className="title__text__content">Dinner Recipee</h1>
         </div>
-        <button type="button" className="button info__button" onClick={handleOpenHintModal}>
+        <button
+          type="button"
+          className="button info__button"
+          onClick={handleOpenHintModal}
+        >
           ?
         </button>
       </div>
